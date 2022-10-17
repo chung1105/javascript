@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>집 번호</h1>
+    <script>
+        let pass=prompt("입력하세요", 0000);
+        let count=1;
+        do{
+            if(pass=="1234"){
+                document.write("열림");
+                break;
+            }else{
+                document.write("다시히세요");
+            }
+            pass=prompt("입력하세요", 0000);
+        }while(count<=5);
+    </script>
+</body>
+</html>
