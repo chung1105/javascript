@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head id=>
+<body>
+    <h1>date</h1>
+    <script>
+        now=new Date();
+        document.write(now);
+        document.write(now.getFullYear() + "년도<br>");
+        document.write(now.getMonth() + 1 + "월<br>");
+        document.write(now.getDate() + "일<br>");
+        document.write(now.getHours() + "시<br>");
+        document.write(now.getMinutes() + "분<br>");
+        document.write(now.getSeconds() + "초<br>");
+        document.write(now.getMilliseconds() + "밀리초<br><hr>");
+
+        if(now.getSeconds()%2==0){
+            document.body.style.backgroundColor="violet"
+        }else{
+            document.body.style.backgroundColor="blue"
+        }
+
+
+    </script>
+    <hr>
+    <h3>string</h3>
+    <script>
+        let hello=new String("안녕하세요")
+        for(let i=0;i<hello.length,i++){
+            document.write(hello[i]+"<br>");
+        }
+        let a=new String("boys and girl");
+        let b=new String("!!");
+        document.write(a+"<br>");
+        document.write(b+"<>br");
+        document.write(a.charAt(3)+"<br>");
+        document.write(a.concat(b,"입니다")+"<br>");
+        document.write(a.indexOf("s")+"<br>");
+        document.write(a.indexOf("and")+"<br>");
+        document.write("aaaa  ".trim() + "<br>");
+    
+        let c=new String("b,o,y");
+        let sub+c.split(",")
+        document.write("<br>"+sub[0]);
+
+
+    </script>
+</body>
+</html>
