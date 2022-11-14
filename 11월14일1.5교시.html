@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Account(owner, code, balance){
+        this.owner=owner;
+        this.code=code;
+        this.balance=balance;
+
+        
+        this.deposit=function deposit(money){
+            this.balance=this,balance+money;
+        }
+        this.withdraw=function(money){
+            this.balance=this.balance-money;
+        }
+        this.inpuery=function inpuery(){
+            return this.balance;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let account1 = new Account("흥길동",11111,1000);
+        document.write(account1.owner);
+        account1.write(account1.balance);
+        account1.deposit(1000);
+        document.write(account1.balance);
+        let account2=new Account("김서원",22222,2000);
+
+    </script>
+</body>
+</html>

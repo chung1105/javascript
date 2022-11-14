@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Student(name,number,phonenum){
+        this.name=name;
+        this.number=number;
+        this.phonenum=phonenum;
+        this.avg=0;
+        this.tgrede=" ";
+        
+    
+        this.grade=function grade(score,count){
+            this.avg=score/count;
+            if(avg>=90){
+            this.tgrede="A";
+        }else if(avg>=80){
+            this.tgrede="B";
+        }else if(avg>=70){
+            this.tgrede="C"
+        }else{
+            this.tgrede="F"
+        }
+        return this.tgrede;
+    
+    
+        }
+    }
+        </script>
+</head>
+<body>
+    <h1>학ㄱ생 프로토타입</h1>
+    <hr>
+    <script>
+        let student1=new Student("흫길동","11111","010-1111-2222");
+        document.write(Student1.name + " , " + student1.student1);
+        document.write(Student1.grade(480,6)+"입니다");
+    </script>
+</body>
+</html>
