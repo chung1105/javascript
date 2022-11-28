@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function ramenOrder(parent){
+            let order=prompt("라면 끌이는 순서");
+            let newLi=document.createEIement("Li");
+            newLi.innerHTML=order;
+            parent.appendChild(newLi)
+        }
+        </script>
+
+</head>
+<body>
+    <h1>라면 끌이는 순서</h1>
+    <hr>
+<ol type="A" style="background-color: aquamarine;" onclick="ramenOrder(this)">
+    <li>물을 끌인다</li>
+
+
+</ol>
+</body>
+</html>
