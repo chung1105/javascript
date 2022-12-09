@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function Books(title,publisher,price,author){
-            this.title=title;
-            this.publisher=publisher;
-            this.price=price;
-            this.author=author;
-
-
-            
-            this.lentNum=function(name){
-            document.write(name+ "님이"  + this.title + "를 대여했습니다")
-
-            }
+        function Books(title,author,publisher,price){
+        this.title=title;
+        this.author=author;
+        this.publisher=publisher;
+        this.price=price;
+        
+        
+        this.lentNum=function(name){
+            document.write(name+"님이 "+ this.title + "을 대여했습니다.");
         }
-    </script>
+    }
+        </script>
 </head>
 <body>
-
-<script>
-let student1=new Books
-
-</script>
+    <h1>도서명 만들고 대여해보기</h1>
+    <hr>
+    <script>
+        let Books1=new Books("홍길동전","허균","비전사","5000");
+        Books1.lentNum("홍길동");
+    </script>
 </body>
 </html>

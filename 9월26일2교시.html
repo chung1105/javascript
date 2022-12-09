@@ -8,10 +8,26 @@
 </head>
 <body>
     <h1>if문 </h1>
+
     <hr>
+    <h6>월,화,수,목,금,토,일중 하나를 입력받아<br>
+        월~금이면 출석,토일이면 휴일이 출력되도록하고<br>
+        다른 것이 입력되면 잘못입력이라고 출력
+    </h6>
+
 
     <script>
-        let str=prompt("요일",)
+
+
+        let str=prompt("요일을 입력하세요","월")
+        if(str=="월" || str=="화" || str=="수" || str=="목" || str=="금"){
+            document.write("출석");
+        }else if(str=="토" || str=="일"){
+            document.write("휴일");
+        }else{
+            document.write("잘못입력하였습니다");
+        }
+        
     </script>
 </body>
 </html>

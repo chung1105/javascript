@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 태그</title>
     <script>
-
-        let p;
-        function init(){
+        var p;
+        function init() {
             p = document.getElementById("p");
-            p.addEventListener("mouseover",over);
-            p.addEventListener("mouseout",out);
+            p.addEventListener("mouseover", over);
+            p.addEventListener("mouseout", out); 
         }
-
-        function over(){
-            this.style.backgroundColor="blue"
+        function over() {
+            p.style.backgroundColor="blue";
         }
-
-        function out(){
-            this.style.backgroundColor="white"
+        function out() {
+            p.style.backgroundColor="white";
         }
-        
-    </script>
+        </script>
+        </head>
+        <body onload="init()">
+        <h3>addEventListener를 이용한 리스너 등록</h3>
+        <hr>
+        <p id="p">마우스 올리면 orchid 색으로 변경</p>
 </head>
 <body>
     <p id="p">마우스</p>

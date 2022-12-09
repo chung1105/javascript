@@ -9,17 +9,18 @@
 <body>
     <h1>집 번호</h1>
     <script>
-        let pass=prompt("입력하세요", 0000);
+        let passwd="";
         let count=1;
         do{
-            if(pass=="1234"){
-                document.write("열림");
-                break;
-            }else{
-                document.write("다시히세요");
+            passwd=prompt("비밀번호 4자리를 입력하세요.",1111)
+            if(passwd=="1234"){
+            document.write("열림");
+            break;
             }
-            pass=prompt("입력하세요", 0000);
+
+            count+=1;
         }while(count<=5);
+        document.write("5번시도가 끝났습니다.");
     </script>
 </body>
 </html>

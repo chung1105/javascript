@@ -9,13 +9,13 @@
 <body>
     <h1>메소드</h1>
     <script>
-        function pr(meg,arr){document.write (meg+arr.toString()+"<br>")}
-        let a= ["황",2,"김","이"];
-        let b=new Array("박")
+        function pr(msg,arr){document.write(msg+arr.toString()+"<br>")}
+        let a=["황",2,"김","이"];
+        let b=new Array("박","허")
         pr("배열 a=",a);
         pr("배열 b=",b);
         document.write("<hr>");
-        let c=a.slice(1,3);
+        let c=a.sort();
         document.write(c);
     </script>
 </body>

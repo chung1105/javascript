@@ -10,24 +10,23 @@
     <h1>평균구하기</h1>
     <h3>5개의 5값을 입력받아 평균을 구함</h3>
     <script>
-    let score=new Array();
-    
-    for(let i=0;i<5;i++){
-        let imsiScore=prompt("점수 입력");
+        let score=new Array();
+        for(let i=0; i<5; i++){
+        let imsiScore=prompt("점수입력")
         score[i]=parseInt(imsiScore);
-    }
-    for(let i=0;i<score.length;i++){
-        document.write(score[i]+"<br>");
-    }
-        document.write("<br><hr>")
-    let sum;
-    for(let i=0;i<score.length;i++){
+        }
+        for(let i=0; i<score.length; i++){
+        document.write(+ score[i] +"<br>")
+        }
+        document.write("<br> <hr>")
+        let sum=0;
+        for(let i=0; i<score.length; i++){
         sum=sum+score[i];
-    } 
-    
-    
-    let avg=sum/score.length
-    document.write("평균:+avg")
+        }
+        document.write("합계 :" +sum + "<br>");
+        let avg;
+        avg=sum/score.length
+        document.write("평균 :" +avg + "<br>");
     </script>
 </body>
 </html>

@@ -8,21 +8,18 @@
 
     <script>
         function ramenOrder(parent){
-            let order=prompt("라면 끌이는 순서");
-            let newLi=document.createEIement("Li");
-            newLi.innerHTML=order;
-            parent.appendChild(newLi)
+            let order=prompt("라면끓이는 순서");
+            let newli=document.createElement("li");
+            newli.innerHTML=order;
+            parent.appendChild(newli);
         }
-        </script>
-
+    </script>
 </head>
 <body>
-    <h1>라면 끌이는 순서</h1>
+    <h3>라면을 끓이는 방법</h3>
     <hr>
-<ol type="A" style="background-color: aquamarine;" onclick="ramenOrder(this)">
-    <li>물을 끌인다</li>
-
-
-</ol>
+    <ol type="A" style="background-color: rgb(50, 205, 117);" onclick="ramenOrder(this)">
+        <li>물을 끓인다.</li>
+    </ol>
 </body>
 </html>
